@@ -2,8 +2,10 @@ from PIL import Image
 from math import floor
 
 def main():
-    n = 5
-    im = Image.open("kotek.jpg")
+    file_name = input("File name: ")
+    n = input("Multiplier: ")
+    n = float(n)
+    im = Image.open(file_name)
     resized_kotek = resize(im, n)
     resized_kotek.show()
     #nowe = Image.new(mode = 'RGB', size = (100, 100))
